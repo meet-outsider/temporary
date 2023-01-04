@@ -1,4 +1,4 @@
-package com.outsider.netty_common;/*
+package com.outsider.netty.common;/*
  * @author uv
  * @date 2018/10/13 18:10
  * 传输请求对象

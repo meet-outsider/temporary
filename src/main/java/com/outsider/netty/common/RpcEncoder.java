@@ -1,4 +1,4 @@
-package com.outsider.netty_common;/*
+package com.outsider.netty.common;/*
  * @author uv
  * @date 2018/10/13 18:09
  * 编码器（将实体类转换成可传输的数据）

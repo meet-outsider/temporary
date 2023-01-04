@@ -4,7 +4,7 @@ package com.outsider.client;/*
  * client消息处理类
  */
 
-import com.outsider.netty_common.RpcResponse;
+import com.outsider.netty.common.RpcResponse;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 

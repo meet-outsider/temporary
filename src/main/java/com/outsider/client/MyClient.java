@@ -5,10 +5,10 @@ package com.outsider.client;/*
  */
 
 
-import com.outsider.netty_common.RpcDecoder;
-import com.outsider.netty_common.RpcEncoder;
-import com.outsider.netty_common.RpcRequest;
-import com.outsider.netty_common.RpcResponse;
+import com.outsider.netty.common.RpcDecoder;
+import com.outsider.netty.common.RpcEncoder;
+import com.outsider.netty.common.RpcRequest;
+import com.outsider.netty.common.RpcResponse;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;

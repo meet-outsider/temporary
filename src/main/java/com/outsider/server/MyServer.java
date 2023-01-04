@@ -1,22 +1,28 @@
 package com.outsider.server;
 
-import com.outsider.netty_common.RpcDecoder;
-import com.outsider.netty_common.RpcEncoder;
-import com.outsider.netty_common.RpcRequest;
-import com.outsider.netty_common.RpcResponse;
+import com.outsider.netty.common.RpcDecoder;
+import com.outsider.netty.common.RpcEncoder;
+import com.outsider.netty.common.RpcRequest;
+import com.outsider.netty.common.RpcResponse;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import java.util.HashMap;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * 服务端
  */
 public class MyServer {
+
+    static CountDownLatch latch = new CountDownLatch(1);
+    public static HashMap<String, ChannelHandlerContext> clientMap = new HashMap<>();
 
     public void bind(int port) throws Exception {
 
@@ -25,7 +31,7 @@ public class MyServer {
 
         ServerBootstrap sb = new ServerBootstrap();
         sb.group(bossGroup, workerGroup)
-            .channel(NioServerSocketChannel.class) //nio
+            .channel(NioServerSocketChannel.class) // nio
             .option(ChannelOption.SO_BACKLOG, 128) // 初始化服务端可连接队列,指定了队列的大小128
             .childOption(ChannelOption.SO_KEEPALIVE, true) // 保持长连接
             .childHandler(new ChannelInitializer<SocketChannel>() {  // 绑定客户端连接时候触发操作
@@ -53,6 +59,8 @@ public class MyServer {
         future.channel().closeFuture().sync();
 
     }
+
+
 
 
 }

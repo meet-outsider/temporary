@@ -1,4 +1,4 @@
-package com.outsider.netty_common;/*
+package com.outsider.netty.common;/*
  * @author uv
  * @date 2018/10/13 18:09
  * 解码器（将接收的数据转换成实体类）
