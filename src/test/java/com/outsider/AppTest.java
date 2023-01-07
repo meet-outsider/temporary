@@ -23,13 +23,7 @@ public class AppTest {
 
     @Test
     void test(){
-        System.out.println("amend");
-        System.out.println("amend -new ");
-        System.out.println("amend -new 11 ");
-        System.out.println("second");
-
-        System.out.println("ssss");
-        System.out.println("v2.0");
+        System.out.println("v3.0 update");
     }
 
 
