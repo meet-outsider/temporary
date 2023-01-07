@@ -23,8 +23,7 @@ public class AppTest {
 
     @Test
     void test() {
-        System.out.println("amend before");
-        System.out.println("amend after");
+        System.out.println("amend");
     }
 
 
