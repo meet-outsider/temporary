@@ -27,6 +27,7 @@ public class AppTest {
         System.out.println("amend -new ");
         System.out.println("amend -new 11 ");
         System.out.println("second");
+        System.out.println("v1.0");
     }
 
 
