@@ -23,7 +23,7 @@ public class AppTest {
 
     @Test
     void test(){
-        System.out.println("3.0 version");
+        System.out.println("4.0 version");
     }
 
 
