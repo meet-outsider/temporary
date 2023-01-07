@@ -22,7 +22,13 @@ public class AppTest {
     private UserService service;
 
     @Test
-    void export() {
+    void test(){
+        System.out.println("amend");
+    }
+
+
+    @Test
+    void lambda() {
         service.lambda();
     }
 

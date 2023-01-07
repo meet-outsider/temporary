@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1621a85-9532-4173-b4ee-ff0f8740a326" name="Changes" comment="mybatis-plus lambda" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="temporary" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="temporary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="temporary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="e0u1nuay" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/devtool/apache-maven-3.8.6/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Gk7F6lVMI16Dlakfcc72IVDxX5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/outsider/CodeProjects/IdeaProjects/temporary&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24013922&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fbbaeea2819d2d3cca12911128ed5c93&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
+    ],
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.AppTest.export">
+    <configuration name="AppTest.export" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="temporary.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.outsider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.outsider" />
+      <option name="MAIN_CLASS_NAME" value="com.outsider.AppTest" />
+      <option name="METHOD_NAME" value="export" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="temporary.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.outsider.SpringbootMain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.outsider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AppTest.export" />
+      <item itemvalue="Spring Boot.SpringbootMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppTest.export" />
+        <item itemvalue="Spring Boot.SpringbootMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1621a85-9532-4173-b4ee-ff0f8740a326" name="Changes" comment="" />
+      <created>1666920621447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666920621447</updated>
+      <workItem from="1666920623960" duration="1451000" />
+      <workItem from="1668062700395" duration="1823000" />
+      <workItem from="1668220117186" duration="693000" />
+      <workItem from="1669807724303" duration="380000" />
+      <workItem from="1669859544461" duration="2705000" />
+      <workItem from="1669867257803" duration="27000" />
+      <workItem from="1669872592757" duration="2810000" />
+      <workItem from="1669887907756" duration="768000" />
+      <workItem from="1669942335204" duration="135000" />
+      <workItem from="1669942679870" duration="32000" />
+      <workItem from="1670054774363" duration="6000" />
+      <workItem from="1670054786817" duration="154000" />
+      <workItem from="1671884810867" duration="337000" />
+      <workItem from="1671885665041" duration="6000" />
+      <workItem from="1672018788436" duration="6150000" />
+      <workItem from="1672033354742" duration="12392000" />
+      <workItem from="1672054812287" duration="97000" />
+      <workItem from="1672103634402" duration="1615000" />
+      <workItem from="1672134341621" duration="727000" />
+      <workItem from="1672135555467" duration="12000" />
+      <workItem from="1672135576813" duration="55000" />
+      <workItem from="1672135670950" duration="83000" />
+      <workItem from="1672135768283" duration="610000" />
+      <workItem from="1672151822334" duration="121000" />
+      <workItem from="1672385758048" duration="1200000" />
+      <workItem from="1672483116313" duration="1265000" />
+      <workItem from="1672502164652" duration="1408000" />
+      <workItem from="1672727543919" duration="334000" />
+      <workItem from="1672727955619" duration="3519000" />
+      <workItem from="1672734428459" duration="4788000" />
+      <workItem from="1672792924510" duration="1789000" />
+      <workItem from="1673092352712" duration="1095000" />
+      <workItem from="1673093506554" duration="369000" />
+      <workItem from="1673093883377" duration="14800000" />
+      <workItem from="1673109368049" duration="179000" />
+      <workItem from="1673109553854" duration="25000" />
+    </task>
+    <task id="LOCAL-00001" summary="netty、nio操作文件">
+      <created>1672044013050</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672044013050</updated>
+    </task>
+    <task id="LOCAL-00002" summary="jdk17：function、instanceOf、&#10;switch（match pattern）、record and so on……">
+      <created>1672794698621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672794698621</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mybatis-plus lambda">
+      <created>1673108449824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673108449825</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mybatis-plus lambda">
+      <created>1673108900331</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673108900331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="netty、nio操作文件" />
+    <MESSAGE value="jdk17：function、instanceOf、&#10;switch（match pattern）、record and so on……" />
+    <MESSAGE value="mybatis-plus lambda" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis-plus lambda" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
