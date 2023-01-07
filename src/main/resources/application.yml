@@ -1,0 +1,28 @@
+server:
+  port: 8133
+
+mybatis-plus:
+  type-aliases-package: com.outsider.domain
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    #一级缓存 session,关闭设置为statement，微服务请关闭
+    #    local-cache-scope: session
+    #sql打印
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    local-cache-scope: session
+  global-config:
+    db-config:
+      logic-delete-field: deleted  # 全局逻辑删除的实体字段名
+      id-type: auto #自增id
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/temp
+    username: root
+    password: root
+    druid:
+      driver: com.mysql.cj.jdbc.Driver
+      stat-view-servlet:
+        url-pattern: /druid/*

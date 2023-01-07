@@ -38,16 +38,16 @@ public class Example {
             default -> System.out.println("match nothing");
         }
         // textBlock
-        var textBlock = """
+        String textBlock = """
             {
               "title" : "untitled",
               "context": "this is context,but noting"
             }
             """;
         // instanceOf
-        if (textBlock instanceof String str) {
-            System.out.println(str);
-        }
+        // if (textBlock instanceof String str) {
+        //     // System.out.println(str);
+        // }
         // record
         record UserRecord(String name, Integer age) {
 

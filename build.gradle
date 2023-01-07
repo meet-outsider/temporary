@@ -1,24 +1,38 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.0.1'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
-group 'com.outsider'
-version '1.0-SNAPSHOT'
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '19'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'com.baomidou:mybatis-plus-boot-starter:3.5.3.1'
+    implementation 'mysql:mysql-connector-java:8.0.31'
+    implementation 'com.alibaba:druid-spring-boot-starter:1.2.15'
     implementation group: 'com.alibaba.fastjson2', name: 'fastjson2', version: '2.0.21'
     implementation group: 'io.netty', name: 'netty-all', version: '4.1.86.Final'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
 
-test {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+tasks.withType(JavaCompile).each {
+    it.options.compilerArgs.add('--enable-preview')
+}
+tasks.named('test') {
     useJUnitPlatform()
 }
-
-sourceCompatibility = JavaVersion.VERSION_19
-targetCompatibility = JavaVersion.VERSION_19
