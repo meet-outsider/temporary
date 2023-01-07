@@ -24,6 +24,7 @@ public class AppTest {
     @Test
     void test() {
         System.out.println("amend");
+        System.out.println("amend again");
     }
 
 
