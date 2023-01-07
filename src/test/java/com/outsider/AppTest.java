@@ -22,8 +22,9 @@ public class AppTest {
     private UserService service;
 
     @Test
-    void test(){
-        System.out.println("2.0 version  end");
+    void test() {
+        System.out.println("amend before");
+        System.out.println("amend after");
     }
 
 
