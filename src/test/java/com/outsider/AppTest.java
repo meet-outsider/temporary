@@ -23,7 +23,7 @@ public class AppTest {
 
     @Test
     void test(){
-        System.out.println("1.0 version 完成");
+        System.out.println("1.0 version  end");
     }
 
 
