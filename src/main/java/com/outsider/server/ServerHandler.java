@@ -1,6 +1,5 @@
 package com.outsider.server;
 
-import com.outsider.Main;
 import com.outsider.netty.common.RpcRequest;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -13,7 +12,6 @@ public class ServerHandler extends SimpleChannelInboundHandler<Object> {
         RpcRequest request = (RpcRequest) msg;
         System.out.println("接收到客户端信息:" + request.toString());
         MyServer.clientMap.put(request.getId(), ctx);
-        Main.latch.countDown();
     }
 
     // 通知处理器最后的channelRead()是当前批处理中的最后一条消息时调用
