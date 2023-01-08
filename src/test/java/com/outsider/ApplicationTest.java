@@ -1,6 +1,7 @@
 package com.outsider;
 
 import com.outsider.client.MyClient;
+import com.outsider.mapper.UserMapper;
 import com.outsider.netty.common.RpcRequest;
 import com.outsider.netty.common.RpcResponse;
 import com.outsider.server.MyServer;
@@ -14,17 +15,20 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class AppTest {
+public class ApplicationTest {
 
     public static CountDownLatch latch = new CountDownLatch(2);
 
     @Resource
     private UserService service;
+    @Resource
+    private UserMapper userMapper;
 
     @Test
     void test() {
         System.out.println("amend");
         System.out.println("amend again");
+        System.out.println(userMapper.getOnce());
     }
 
 
