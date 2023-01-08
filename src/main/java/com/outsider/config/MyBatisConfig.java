@@ -1,7 +1,6 @@
 package com.outsider.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
-import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -15,9 +14,9 @@ public class MyBatisConfig {
         interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.H2));
         return interceptor;
     }
-    @Bean
-    public ConfigurationCustomizer configurationCustomizer() {
-        return configuration -> configuration.setUseGeneratedShortKey(false);
-    }
+    // @Bean
+    // public ConfigurationCustomizer configurationCustomizer() {
+    //     return configuration -> configuration.setUseGeneratedShortKey(false);
+    // }
 
 }

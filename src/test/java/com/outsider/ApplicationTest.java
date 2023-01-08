@@ -1,6 +1,9 @@
 package com.outsider;
 
+import com.outsider.annotation.Resolve;
 import com.outsider.client.MyClient;
+import com.outsider.domain.po.User;
+import com.outsider.enums.ResolveType;
 import com.outsider.mapper.UserMapper;
 import com.outsider.netty.common.RpcRequest;
 import com.outsider.netty.common.RpcResponse;
@@ -9,8 +12,12 @@ import com.outsider.service.UserService;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import jakarta.annotation.Resource;
+import java.lang.annotation.ElementType;
+import java.lang.reflect.Field;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.stream.Stream;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -23,6 +30,34 @@ public class ApplicationTest {
     private UserService service;
     @Resource
     private UserMapper userMapper;
+
+    record tuple(String name, ElementType elementType, ResolveType resolveType) {
+
+    }
+
+    @Test
+    void customAnnotation() {
+        Field[] declaredFields = User.class.getDeclaredFields();
+        Resolve resolve = User.class.getDeclaredAnnotation(Resolve.class);
+        tuple tupleClass = new tuple(User.class.getSimpleName(), ElementType.TYPE, resolve.type());
+        List<tuple> list = Stream.of(declaredFields)
+            .filter(f -> f.isAnnotationPresent(Resolve.class))
+            .map(f -> new tuple(f.getName(), ElementType.FIELD,
+                f.getAnnotation(Resolve.class).type()))
+            .toList();
+        System.out.println("""
+            获取类上的resolve注解信息
+            可以根据值做权限控制
+            """ + tupleClass.name + "\t" + tupleClass.elementType + "\t" + tupleClass.resolveType
+            + "\n");
+        System.out.println("""
+            获取属性上的resolve注解信息
+            可以根据字段做权限控制            
+            """);
+        list.forEach(f -> {
+            System.out.println(f.name + "\t" + f.elementType + "\t" + f.resolveType);
+        });
+    }
 
     @Test
     void test() {
