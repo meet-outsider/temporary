@@ -61,7 +61,7 @@ public class ApplicationTest {
 
     @Test
     void commit() {
-        System.out.println("commit");
+        System.out.println("merge");
     }
 
 
