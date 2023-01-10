@@ -20,4 +20,9 @@ public class OtherServiceImpl extends ServiceImpl<UserMapper, User>
         System.out.println(this.lambdaQuery().list());
     }
 
+    @Override
+    public void transactionTest() {
+
+    }
+
 }

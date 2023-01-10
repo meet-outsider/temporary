@@ -7,6 +7,7 @@ import com.outsider.service.UserService;
 import java.util.List;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author outsider
@@ -34,9 +35,22 @@ public class DefaultServiceImpl extends ServiceImpl<UserMapper, User>
 
         assert (
             this.lambdaUpdate()
-            .eq(User::getId, 1)
-            .update(new User().setName("lambda"))
+                .eq(User::getId, 1)
+                .update(new User().setName("lambda"))
         );
+    }
+
+    @Override
+    @Transactional
+    public void transactionTest() {
+        saveTT();
+        if (true) {
+            throw new RuntimeException("ss");
+        }
+        this.save(new User().setName("b"));
+    }
+    void saveTT(){
+        this.save(new User().setName("naaaa"));
     }
 }
 

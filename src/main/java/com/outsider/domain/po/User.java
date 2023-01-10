@@ -3,6 +3,7 @@ package com.outsider.domain.po;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.outsider.annotation.Resolve;
 import com.outsider.enums.ResolveType;
 import java.io.Serial;
@@ -28,6 +29,7 @@ public class User implements Serializable {
     @Resolve(type = ResolveType.ACCESS)
     private Integer age;
 
+    @JsonIgnore
     private boolean deleted;
 
     @Serial

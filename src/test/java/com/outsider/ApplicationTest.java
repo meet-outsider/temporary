@@ -60,16 +60,14 @@ public class ApplicationTest {
     }
 
     @Test
-    void test() {
-        System.out.println("amend");
-        System.out.println("amend again");
-        System.out.println(userMapper.getOnce());
+    void commit() {
+        System.out.println("commit");
     }
 
 
     @Test
     void lambda() {
-        service.lambda();
+        service.transactionTest();
     }
 
     @Test

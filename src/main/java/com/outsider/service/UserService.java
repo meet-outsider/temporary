@@ -12,4 +12,6 @@ public interface UserService extends IService<User> {
      String nothing();
 
      void lambda();
+
+     void transactionTest();
 }
