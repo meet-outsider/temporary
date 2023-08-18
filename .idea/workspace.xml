@@ -23,23 +23,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="temporary" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="temporary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="temporary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -70,6 +54,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2Gk7F6lVMI16Dlakfcc72IVDxX5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,42 +66,43 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;ignore.preview.features.used&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/outsider/CodeProjects/IdeaProjects/temporary&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.24013922&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;fbbaeea2819d2d3cca12911128ed5c93&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "last_opened_file_path": "/Users/outsider/workspace/temporary",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24013922",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "fbbaeea2819d2d3cca12911128ed5c93",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;,
-      &quot;directory&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.AppTest.export">
     <configuration name="AppTest.export" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="temporary.test" />
@@ -200,6 +188,10 @@
       <workItem from="1673093883377" duration="14800000" />
       <workItem from="1673109368049" duration="179000" />
       <workItem from="1673109553854" duration="25000" />
+      <workItem from="1692355299364" duration="6000" />
+      <workItem from="1692355317174" duration="28000" />
+      <workItem from="1692355346589" duration="24000" />
+      <workItem from="1692355372833" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="netty、nio操作文件">
       <created>1672044013050</created>
